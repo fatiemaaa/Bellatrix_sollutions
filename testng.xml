@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="add Products to cart">
+        <classes>
+            <class name="testcases.TC01_Home">
+                <methods>
+                    <include name="addProductsToCart"/>
+                </methods>
+            </class>
+            <class name="testcases.TC02_Cart">
+                <methods>
+                    <include name="ClickOnCheckOut"/>
+                </methods>
+            </class>
+            <class name="testcases.TC03_CheckOut">
+                <methods>
+                    <include name="ValidtePlacingOrderSuccessfully"/>
+                </methods>
+            </class>
+            <class name="testcases.TC04_Submit">
+                <methods>
+                    <include name="ValidateClickOnSumbitBtn"/>
+                </methods>
+            </class>
+            <class name="testcases.TC05_Login">
+                <methods>
+                    <include name="loginwithvalidcredentials"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
