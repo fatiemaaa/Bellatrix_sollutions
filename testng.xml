@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test name="add Products to cart">
+    <!-- Test group for executing all test cases -->
+    <test name="All Test Cases">
         <classes>
+            <!-- Test case for adding products to the cart -->
             <class name="testcases.TC01_Home">
                 <methods>
                     <include name="addProductsToCart"/>
                 </methods>
             </class>
+
+            <!-- Test case for interacting with the cart -->
             <class name="testcases.TC02_Cart">
                 <methods>
                     <include name="ClickOnCheckOut"/>
                 </methods>
             </class>
+
+            <!-- Test case for the checkout process -->
             <class name="testcases.TC03_CheckOut">
                 <methods>
-                    <include name="ValidtePlacingOrderSuccessfully"/>
+                    <include name="ValidatePlacingOrderSuccessfully"/>
                 </methods>
             </class>
-            <class name="testcases.TC04_Submit">
+
+
+            <class name="testcases.TC04_Login">
                 <methods>
-                    <include name="ValidateClickOnSumbitBtn"/>
-                </methods>
-            </class>
-            <class name="testcases.TC05_Login">
-                <methods>
-                    <include name="loginwithvalidcredentials"/>
+                    <include name="loginWithValidCredentials"/>
                 </methods>
             </class>
         </classes>

@@ -19,6 +19,7 @@ public class P01_HomePage {
     }
 
     // Locators
+    private final By Click_On_My_Account = By.xpath("//li[@class='page_item page-item-8 current_page_item focus']//a[normalize-space()='My account']");
     private final By FIRST_PRODUCT_Add_TO_Cart = By.xpath("//*[@id='main']/ul/li[1]//a[contains(@class, 'add_to_cart_button')]");
     private final By VIEWCART = By.xpath("//a[@title='View cart']");
 
@@ -34,6 +35,12 @@ public class P01_HomePage {
     public P01_HomePage viewCart() {
         WebElement viewCartButton = wait.until(ExpectedConditions.elementToBeClickable(VIEWCART));
         viewCartButton.click();
+        return this;
+    }
+    public P01_HomePage clickOnMyAccount(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(this.Click_On_My_Account)).click();
+      //  WebElement clickOnMyAccountButton = wait.until(ExpectedConditions.elementToBeClickable(Click_On_My_Account));
+      //  clickOnMyAccountButton.click();
         return this;
     }
 

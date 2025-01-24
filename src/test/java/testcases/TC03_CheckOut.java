@@ -19,7 +19,7 @@ public class TC03_CheckOut extends TestBase {
 
 
     @Test(priority = 1, description = "Validate Placing Order Successfully")
-    public void ValidtePlacingOrderSuccessfully() throws InterruptedException {
+    public void ValidatePlacingOrderSuccessfully() throws InterruptedException {
 
         // Other variables can be initialized similarly
         new PageBase(driver).scrollDown();
@@ -34,7 +34,7 @@ public class TC03_CheckOut extends TestBase {
                 .enterEmailAddress(email)
                 .clickOnCreateAnAcct().enterZipCode("80331").clickOnPlaceOrder();
 
-        Thread.sleep(10000);
+        Thread.sleep(50000);
 
 
 
