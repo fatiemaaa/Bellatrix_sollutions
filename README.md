@@ -43,6 +43,9 @@ To set up the Bellatrix_sollutions application locally, follow these steps:
 
 ## Usage
 * User Guide: Refer to the User Guide for detailed information on how to use the Bellatrix_sollutions application.
+### Local testing execution example
+
+![Local testing execution example](assets/demo.gif)
 
 ## Contributing
 * We welcome contributions from the community. To contribute to Bellatrix_sollutions, follow these steps:
